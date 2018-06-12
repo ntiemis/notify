@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+.logo {
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#ponto {
+    font-size: 50px;
+    color:  #2CCF76;
+    margin-bottom: auto 10px 0;
+}
+
+.banner{
+    background-image: url(imagens/background.png);
+    background-size: cover;
+    max-width: 100%;
+    color: white;
+    border-top: 10px solid #2CCF76;
+    display: flex;
+}
+
+#banner1 {
+    position: relative;
+    max-width: 60%;
+    margin: auto;
+}
+
+#banner2 {
+    position: relative;
+    max-width: 80%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.bannertopo {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.icones {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.icones > div > p {
+    font-size: 15px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+.icones > div > h2 {
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    display: flex;
+    max-width: 40px;
+    background-color: gray;
+    border-radius: 100%;
+    margin: 20px;
+
+}
+
+span {
+    border-radius: 100%;
+    position: relative;
+    margin-bottom: 0px;
+    background-color: #2CCF76;
+    width: 10px;
+    top: 0;
+    left: 150px;
+    height: 10px;
+    display: inline;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.notificacao {
+    background-color:lightgray;
+    position: relative;
+    display: flex;
+    margin: auto;
+}
+.notificacao > div > p {
+    font-size: 15px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+.notificacao > div > h2 {
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+iframe {
+    max-width: 70%;
+    margin: auto;
+}
+
+#noti {
+    max-width: 60%;
+    margin: auto;
+}
+
+#video {
+    max-width: 40%;
+    margin: auto;
+}
+
+.depoimentos > div {
+    position: relative;
+    display: flex;
+}
+
+footer {
+    background-color: lightgrey;
+    display: flex;
+}
+
+footer > h2 {
+    color: gray;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
