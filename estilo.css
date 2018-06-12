@@ -1,81 +1,79 @@
 body {
     margin: 0;
 }
-.logo {
-    position: relative;
-    display: flex;
-    margin-bottom: 10px;
-}
-
-#ponto {
-    font-size: 50px;
-    color:  #2CCF76;
-    margin-bottom: auto 10px 0;
-}
 
 .banner{
+
     background-image: url(imagens/background.png);
     background-size: cover;
-    max-width: 100%;
-    color: white;
-    border-top: 10px solid #2CCF76;
+    height: 600px;
     display: flex;
+    border-top: 10px solid rgb(83, 198, 94);
+    margin: auto;
+    max-width: 100%;
 }
 
 #banner1 {
-    position: relative;
-    max-width: 60%;
-    margin: auto;
+    max-width: 50%;
+    display: block;
+    margin: auto 10%;
 }
 
-#banner2 {
-    position: relative;
+#banner1 >h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    color: white;
+}
+
+#banner1 >p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    color: white;
     max-width: 80%;
-    margin-top: 30px;
-    margin-bottom: 0px;
 }
 
-.bannertopo {
+span {
+    background-color: rgb(83, 198, 94);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-top: 35px;
+    margin-left: 8px;
+}
+
+.redondofundo {
+    display: flex;
     position: relative;
-    margin-bottom: 0px;
+    background-color: darkgray;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    opacity: 50%;
+    border-radius: 100%;
 }
 
 .icones {
     display: flex;
-    max-width: 90%;
     margin: auto;
-    text-align: center;
 }
 
-.icones > div > p {
+.icon {
+    margin: 25%;
+    }
+
+#baner2 {
+    margin-bottom: 0;
+    }
+
+
+.itens > div > p {
     font-size: 15px;
     color: gray;
     font-family: 'Roboto', sans-serif;
 }
-.icones > div > h2 {
+.itens > div > h2 {
     font-size: 19px;
     font-family: 'Roboto', sans-serif;
-}
-
-.icon {
-    display: flex;
-    max-width: 40px;
-    background-color: gray;
-    border-radius: 100%;
-    margin: 20px;
-
-}
-
-span {
-    border-radius: 100%;
-    position: relative;
-    margin-bottom: 0px;
-    background-color: #2CCF76;
-    width: 10px;
-    top: 0;
-    left: 150px;
-    height: 10px;
-    display: inline;
 }
 
 h1 {
