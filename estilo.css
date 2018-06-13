@@ -3,21 +3,26 @@ body {
 }
 
 .banner{
-
-    background-image: url(imagens/background.png);
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    border-top: 10px solid rgb(83, 198, 94);
-    margin: auto;
-    max-width: 100%;
+        background-image: url(imagens/background.png);
+        background-size: cover;
+        color: white;
+        border-top: 10px solid rgb(83, 198, 94);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 350px;
 }
 
 #banner1 {
-    max-width: 50%;
     display: block;
-    margin: auto 10%;
+    margin: 5%;
 }
+
+.banner > .mao {
+        align-self: flex-end;
+        max-width: 300px;
+        display: none;
+    }
 
 #banner1 >h1 {
     font-family: 'Pacifico', cursive;
@@ -67,7 +72,7 @@ span {
 
 .icones {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     margin: auto;
 }
 
@@ -84,16 +89,10 @@ span {
     position: relative;
 }
 
-.mao {
-    height: 92%;
-    margin: 10% auto;
-    position: relative;
-    display: inline;
-}
-
 .itens {
     position: relative;
     display: flex;
+    flex-wrap: none;
     margin: 40px auto;
     max-width: 80%;
     text-align: center;
@@ -108,6 +107,7 @@ span {
 
 .imagensicones {
     align-items: center;
+    flex-wrap: wrap;
     position: relative;
     background-color: rgb(83, 198, 94);
     width: 80px;
@@ -155,34 +155,154 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-iframe {
-    max-width: 70%;
-    margin: auto;
-}
-
 #noti {
-    max-width: 60%;
-    margin: auto;
-}
-
-#video {
-    max-width: 40%;
-    margin: auto;
-}
-
-.depoimentos > div {
+    max-width: 50%;
     position: relative;
+    height: 250px;
+    margin: 50px auto;
+}
+
+.notificacao > .button {
+    color: rgb(83, 198, 94);
+}
+
+#video{
+    position: relative;
+    margin: 90px auto;
+}
+
+iframe {
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.email {
+    background-color: white;
+    max-width: 38%;
+    border-radius: 8px;
+    height: 30px;
     display: flex;
 }
+.email>input {
+    border: 0;
+    margin: 7px 10px;
+    background-color: none;
+    text-decoration-color:lightgray;
+}
+
+.email>div {
+    background-color:  rgb(83, 198, 94);
+    width: 80px;
+    height: 30px;
+    position: relative;
+    border-radius: 0 8px 8px 0;
+    display: inline;
+    margin-right: 0;
+}
+
+
+.email>div>h2 {
+    color: white;
+    position: relative;
+    margin: 7px auto;
+    font-family: roboto;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+#filtro {
+    position: relative;
+    max-width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.depoimentos > h2 {
+    text-align: center;
+    font-family: roboto;
+}
+
+.depoimentos > p {
+    text-align: center;
+    max-width: 60%;
+    font-size: 16px;
+    margin: 30px auto;
+    color: gray;
+    font-family: roboto;
+}
+
+.depoimentos > h3 {
+    text-align: center;
+    font-family: roboto;
+}
+
+.rosto {
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
 
 footer {
     background-color: lightgrey;
     display: flex;
+    height: 80px;
+    justify-content: center;
 }
 
 footer > h2 {
     color: gray;
-    margin: 20px;
+    margin: 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
+
+.itens > div {
+    margin: auto 5%;
+}
+
+@media(min-width: 768px){
+    .banner {
+        height: 380px;
+        padding: 0 100px;
+    }
+
+    .banner > .mao{
+        display: block;
+    }
+
+    
+    .itens {
+        position: relative;
+        display: flex;
+        margin: 40px auto;
+        max-width: 80%;
+        text-align: center;
+    }
+    
+@media(max-width: 768px){ 
+
+    .itens {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .banner {
+        height: 380px;
+        padding: 0 200px;
+    }
+
+    .banner > .mao{
+        width: 350px;
+        display: block;
+    }
+
+}
+
