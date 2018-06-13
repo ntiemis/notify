@@ -6,7 +6,7 @@ body {
 
     background-image: url(imagens/background.png);
     background-size: cover;
-    height: 600px;
+    height: 400px;
     display: flex;
     border-top: 10px solid rgb(83, 198, 94);
     margin: auto;
@@ -44,7 +44,8 @@ span {
 .redondofundo {
     display: flex;
     position: relative;
-    background-color: darkgray;
+    background-color: black;
+    filter: opacity(50%);
     width: 50px;
     height: 50px;
     margin: 10px;
@@ -52,19 +53,68 @@ span {
     border-radius: 100%;
 }
 
+.redondofundo:hover {
+    display: flex;
+    position: relative;
+    background-color: rgb(83, 198, 94);
+    filter: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    opacity: 50%;
+    border-radius: 100%; 
+}
+
 .icones {
     display: flex;
+    flex-wrap: wrap-reverse;
     margin: auto;
 }
 
 .icon {
+    filter: opacity(100%);
     margin: 25%;
     }
 
-#baner2 {
-    margin-bottom: 0;
-    }
+.bannertopo {
+    max-width: 50%;
+    border: 0;
+    margin: 0;
+    justify-content: flex-end;
+    position: relative;
+}
 
+.mao {
+    height: 92%;
+    margin: 10% auto;
+    position: relative;
+    display: inline;
+}
+
+.itens {
+    position: relative;
+    display: flex;
+    margin: 40px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.imagensicones > img {
+    position: relative;
+    margin-top: 15px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.imagensicones {
+    align-items: center;
+    position: relative;
+    background-color: rgb(83, 198, 94);
+    width: 80px;
+    height: 80px;
+    margin: 30px auto 30px;
+    border-radius: 100%;
+}
 
 .itens > div > p {
     font-size: 15px;
